@@ -52,13 +52,12 @@ public class TransposeTest {
 
     /*
     To test setString() method.
-    Should Return False if we pass an empty String to it.
+    Should Return RuntimeException if we pass an empty String to it.
      */
-    @Test
-    public void givenStringShouldReturnFalse() {
-        assertFalse(transpose.setString(""));
+    @Test(expected = RuntimeException.class)
+    public void givenEmptyStringShouldReturnRunTimeException() {
+        transpose.setString("");
     }
-
     /*
     To test setString() and getTransposedString() method.
     Should Return True if we pass a valid String to setString() method.

@@ -54,6 +54,15 @@ public class OccurrenceOfACharacterTest {
     Should return the expected output if we call getNumberOfOccurrence() method.
      */
 
+    /*
+    To test setString() method.
+    Should Return RuntimeException if we pass an empty String to it.
+     */
+    @Test(expected = RuntimeException.class)
+    public void givenEmptyStringShouldReturnRunTimeException() {
+        occurrenceOfACharacter.setString("");
+    }
+
     @Test
     public void givenStringAndCharacterShouldReturnTheNumberOfOccurrenceOfThatCharacterInString() {
         assertTrue(occurrenceOfACharacter.setString("This is the given String"));

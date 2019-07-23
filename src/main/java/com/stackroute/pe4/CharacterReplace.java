@@ -16,8 +16,8 @@ public class CharacterReplace {
         if (inputString == null){
             throw new NullPointerException();
         }
-        else if (inputString.isEmpty()){
-            boo = false;
+        else if (inputString.trim().isEmpty()){
+            throw new RuntimeException("You have entered an empty string");
         }
         else {
             this.inputString = inputString;

@@ -53,13 +53,12 @@ public class SortingTextInAlphabeticalOrderTest {
 
     /*
     To test setString() method.
-    Should Return False if we pass an empty String to it.
+    Should Return RuntimeException if we pass an empty String to it.
      */
-    @Test
-    public void givenStringShouldReturnFalse() {
-        assertFalse(sortingTextInAlphabeticalOrder.setString(""));
+    @Test(expected = RuntimeException.class)
+    public void givenEmptyStringShouldReturnRunTimeException() {
+        sortingTextInAlphabeticalOrder.setString("");
     }
-
     /*
     To Test setString() and getSortedText() method.
     Should return True if we pass a String value to setString () method.

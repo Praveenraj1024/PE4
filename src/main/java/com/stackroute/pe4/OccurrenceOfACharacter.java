@@ -15,12 +15,15 @@ public class OccurrenceOfACharacter {
      */
     public boolean setString(String givenString) {
         boolean boo = false;
-        if (givenString != null) {
-            this.givenString = givenString;
-            boo = true;
+        if (givenString == null){
+            throw new NullPointerException();
+        }
+        else if (givenString.trim().isEmpty()){
+            throw new RuntimeException("You have entered an empty string");
         }
         else {
-            throw new NullPointerException();
+            this.givenString = givenString;
+            boo = true;
         }
         return boo;
     }

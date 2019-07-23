@@ -51,11 +51,11 @@ public class MatchCheckerTest {
 
     /*
     To test setString() method.
-    Should Return False if we pass an empty String to it.
+    Should Return RuntimeException if we pass an empty String to it.
      */
-    @Test
-    public void givenStringShouldReturnFalse() {
-        assertFalse(matchingPattern.setString(""));
+    @Test(expected = RuntimeException.class)
+    public void givenEmptyStringShouldReturnRunTimeException() {
+        matchingPattern.setString("");
     }
 
     /*

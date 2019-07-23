@@ -56,6 +56,15 @@ public class CharacterReplaceTest {
 
     /*
     To test setString() method.
+    Should Return RuntimeException if we pass an empty String to it.
+     */
+    @Test(expected = RuntimeException.class)
+    public void givenEmptyStringShouldReturnRunTimeException() {
+        characterReplace.setString("");
+    }
+
+    /*
+    To test setString() method.
     Should return True if we pass a valid String to it.
      */
     @Test
@@ -64,14 +73,6 @@ public class CharacterReplaceTest {
         assertTrue(characterReplace.setString(" d  "));
     }
 
-    /*
-    To test setString() method.
-    Should Return False if we pass an empty String to it.
-     */
-    @Test
-    public void givenStringShouldReturnFalse() {
-        assertFalse(characterReplace.setString(""));
-    }
 
     /*
     To test setString() and charactersReplacer() methods.
