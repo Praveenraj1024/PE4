@@ -48,11 +48,6 @@ public class OccurrenceOfACharacterTest {
         occurrenceOfACharacter.setString(3443);
     }
 
-    /*
-    To Test setString() and getNumberOfOccurrence() method.
-    Should return True if we pass a String value to setString () method.
-    Should return the expected output if we call getNumberOfOccurrence() method.
-     */
 
     /*
     To test setString() method.
@@ -62,6 +57,13 @@ public class OccurrenceOfACharacterTest {
     public void givenEmptyStringShouldReturnRunTimeException() {
         occurrenceOfACharacter.setString("");
     }
+
+    /*
+    To Test setString() and getNumberOfOccurrence() method.
+    Should return True if we pass a String value to setString () method.
+    Should return the expected output if we call getNumberOfOccurrence() method.
+     */
+
 
     @Test
     public void givenStringAndCharacterShouldReturnTheNumberOfOccurrenceOfThatCharacterInString() {
