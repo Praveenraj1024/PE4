@@ -8,6 +8,11 @@ import java.util.List;
 public class SortingTextInAlphabeticalOrder {
     private String paraOfText;
 
+    /*
+    Returns Null pointer Exception if the passed value is null.
+    Returns False if the passed value is empty.
+    Returns True if passed value is a valid String.
+     */
     public boolean setString(String inputString){
         boolean boo = true;
         if (inputString == null){
@@ -22,10 +27,16 @@ public class SortingTextInAlphabeticalOrder {
         return boo;
     }
 
+    /*
+    Should throw an InvalidParameterException if the integer value is passed to setString().
+     */
     public boolean setString(int inputString){
         throw new InvalidParameterException();
     }
 
+    /*
+    Should Return the list of sorted words in alphabetical order.
+     */
     public List<String> getSortedText() {
         String[] wordsArray = this.paraOfText.split(" |,");
         List<String> wordsList = new ArrayList<>();
@@ -34,7 +45,6 @@ public class SortingTextInAlphabeticalOrder {
             Arrays.sort(charsInString, String.CASE_INSENSITIVE_ORDER);
             String string = String.join("", charsInString);
             wordsList.add(string);
-//            System.out.println(string);
         }
 
         return wordsList;
