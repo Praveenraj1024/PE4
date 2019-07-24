@@ -1,5 +1,9 @@
 Java.iml
 out/
+
+#To untrack all .iml files
+*.iml
+
 ######################
 # Project Specific
 ######################
