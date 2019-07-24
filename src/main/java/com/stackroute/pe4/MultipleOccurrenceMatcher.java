@@ -18,10 +18,10 @@ public class MultipleOccurrenceMatcher {
     public boolean setString(String inputString) {
         boolean boo = false;
         if (inputString == null){
-            throw new NullPointerException();
+            inputString.charAt(0);
         }
         else if (inputString.trim().isEmpty()){
-            throw new RuntimeException("You have entered an empty or blank string");
+            inputString.charAt(2);
         }
         else{
             this.givenString = inputString;
@@ -30,13 +30,6 @@ public class MultipleOccurrenceMatcher {
         return boo;
     }
 
-    /*
-    Returns InvalidParameter Exception if the input is int to setString() method.
-     */
-
-    public boolean setString(int inputString) {
-        throw new InvalidParameterException();
-    }
 
     /*
     Should check the multiple occurrence of a given pattern in the given

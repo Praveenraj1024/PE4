@@ -16,10 +16,10 @@ public class SortingTextInAlphabeticalOrder {
     public boolean setString(String inputString){
         boolean boo = true;
         if (inputString == null){
-            throw new NullPointerException();
+            inputString.charAt(0);
         }
         else if (inputString.trim().isEmpty()){
-            throw new RuntimeException("You have entered an empty string");
+            inputString.charAt(2);
         }
         else{
             this.paraOfText = inputString;
@@ -27,12 +27,6 @@ public class SortingTextInAlphabeticalOrder {
         return boo;
     }
 
-    /*
-    Should throw an InvalidParameterException if the integer value is passed to setString().
-     */
-    public boolean setString(int inputString){
-        throw new InvalidParameterException();
-    }
 
     /*
     Should Return the list of sorted words in alphabetical order.

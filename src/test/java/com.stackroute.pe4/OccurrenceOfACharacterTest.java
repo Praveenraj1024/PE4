@@ -39,14 +39,6 @@ public class OccurrenceOfACharacterTest {
     }
 
 
-    /*
-    To Test setString() method.
-    Should return InvalidParameterException if we pass Integer value.
-     */
-    @Test(expected = InvalidParameterException.class)
-    public void givenIntegerValueShouldReturnInvaldiParameterException() {
-        occurrenceOfACharacter.setString(3443);
-    }
 
 
     /*
@@ -70,6 +62,20 @@ public class OccurrenceOfACharacterTest {
         assertTrue(occurrenceOfACharacter.setString("This is the given String"));
         int expectedOutput = 4;
         assertEquals(expectedOutput, occurrenceOfACharacter.getNumberOfOccurrence('i'));
+    }
+
+    /*
+    To Test setString() and getNumberOfOccurrence() method.
+    Should return True if we pass a String value to setString () method.
+    Should return the expected output if we call getNumberOfOccurrence() method.
+     */
+
+
+    @Test
+    public void givenStringAndCharacterShouldReturnNumberOfOccurrenceOfThatCharacterInString() {
+        assertTrue(occurrenceOfACharacter.setString("This is the given String"));
+        int expectedOutput = 4;
+        assertEquals(expectedOutput, occurrenceOfACharacter.getNumberOfOccurrence(' '));
     }
 
 

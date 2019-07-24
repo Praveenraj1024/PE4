@@ -17,10 +17,10 @@ public class Transpose {
     public boolean setString(String inputString){
         boolean boo = true;
         if (inputString == null){
-            throw new NullPointerException();
+            inputString.charAt(0);
         }
         else if (inputString.trim().isEmpty()){
-            throw new RuntimeException("You have entered an empty string");
+            inputString.charAt(2);
         }
         else{
             this.givenString = inputString;
@@ -28,13 +28,6 @@ public class Transpose {
         return boo;
     }
 
-     /*
-    Returns InvalidParameter Exception if the input is int to setString() method.
-     */
-
-    public boolean setString(int inputString){
-        throw new InvalidParameterException();
-    }
 
     /*
     Should return a String, where each and every word of a inputString should be reversed.

@@ -16,10 +16,10 @@ public class OccurrenceOfACharacter {
     public boolean setString(String givenString) {
         boolean boo = false;
         if (givenString == null){
-            throw new NullPointerException();
+            givenString.charAt(0);
         }
         else if (givenString.trim().isEmpty()){
-            throw new RuntimeException("You have entered an empty string");
+            givenString.charAt(2);
         }
         else {
             this.givenString = givenString;
@@ -28,12 +28,6 @@ public class OccurrenceOfACharacter {
         return boo;
     }
 
-    /*
-    Returns InvalidParameter Exception if the input is int to setString() method.
-     */
-    public boolean setString(int givenString) {
-        throw new InvalidParameterException();
-    }
 
     /*
     Returns Number of occurrence of a character in a String.
