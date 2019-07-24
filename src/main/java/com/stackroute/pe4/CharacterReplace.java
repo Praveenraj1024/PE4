@@ -14,22 +14,15 @@ public class CharacterReplace {
     public boolean setString(String inputString){
         boolean boo = true;
         if (inputString == null){
-            throw new NullPointerException();
+            inputString.charAt(0);
         }
         else if (inputString.trim().isEmpty()){
-            throw new RuntimeException("You have entered an empty string");
+            inputString.charAt(1);
         }
         else {
             this.inputString = inputString;
         }
         return boo;
-    }
-
-    /*
-    Returns Invalid Parameter Exception if the passed value is int to setString().
-     */
-    public boolean setString(int inputString){
-        throw new InvalidParameterException();
     }
 
 

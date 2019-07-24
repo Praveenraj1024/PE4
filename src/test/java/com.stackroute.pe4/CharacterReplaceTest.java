@@ -43,16 +43,6 @@ public class CharacterReplaceTest {
     }
 
 
-    /*
-    To test the setString() method.
-    Should Return InvalidParameterException if we pass Integer value.
-     */
-
-    @Test(expected = InvalidParameterException.class)
-    public void givenIntegerShouldReturnInvalidParameterException() {
-        characterReplace.setString(24);
-    }
-
 
     /*
     To test setString() method.

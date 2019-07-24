@@ -16,25 +16,18 @@ public class MatchingPattern {
     Returns True if passed value is a valid String.
     */
     public boolean setString(String inputString){
-        boolean boo = true;
+        boolean boo = false;
         if (inputString == null){
-            throw new NullPointerException();
+            inputString.charAt(0);
         }
         else if (inputString.trim().isEmpty()){
-            throw new RuntimeException("You have entered an empty string");
+            inputString.charAt(1);
         }
         else{
             this.givenString = inputString;
+            boo = true;
         }
         return boo;
-    }
-
-     /*
-    Returns InvalidParameter Exception if the input is int to setString() method.
-     */
-
-    public boolean setString(int inputString){
-        throw new InvalidParameterException();
     }
 
 

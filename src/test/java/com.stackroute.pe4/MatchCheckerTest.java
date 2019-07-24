@@ -40,14 +40,6 @@ public class MatchCheckerTest {
     }
 
 
-    /*
-    To Test setString() method.
-    Should return InvalidParameterException if we pass Integer value.
-     */
-    @Test(expected = InvalidParameterException.class)
-    public void givenIntegerValueShouldReturnInvaldiParameterException() {
-        matchingPattern.setString(3443);
-    }
 
     /*
     To test setString() method.
